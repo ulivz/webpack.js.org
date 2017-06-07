@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/c8f355ca85a205475427.css" rel="stylesheet">
+      <link href="/0372b08db74de5ed8f11.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -67,7 +67,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
     rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-      <span class="token punctuation">{</span>test<span class="token punctuation">:</span> <span class="token regex">/\.(js|jsx)$/</span><span class="token punctuation">,</span> use<span class="token punctuation">:</span> <span class="token string">&apos;babel-loader&apos;</span><span class="token punctuation">}</span>
+      <span class="token punctuation">{</span>test<span class="token punctuation">:</span> <span class="token regex">/\.txt$/</span><span class="token punctuation">,</span> use<span class="token punctuation">:</span> <span class="token string">&apos;raw-loader&apos;</span><span class="token punctuation">}</span>
     <span class="token punctuation">]</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
@@ -76,7 +76,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 </code></pre>
 <p>The configuration above has defined a <code>rules</code> property for a single module with two required properties: <code>test</code> and <code>use</code>. This tells webpack&apos;s compiler the following:</p>
 <blockquote>
-<p>&quot;Hey webpack compiler, when you come across a path that resolves to a &apos;.js&apos; or &apos;.jsx&apos; file inside of a <code>require()</code>/<code>import</code> statement, <strong>use</strong> the <code>babel-loader</code> to transform it before you add it to the bundle&quot;.</p>
+<p>&quot;Hey webpack compiler, when you come across a path that resolves to a &apos;.txt&apos; file inside of a <code>require()</code>/<code>import</code> statement, <strong>use</strong> the <code>raw-loader</code> to transform it before you add it to the bundle&quot;.</p>
 </blockquote>
 <blockquote class="warning"><div class="tip-content"> It is important to remember when defining rules in your webpack config, you are defining them under <code>module.rules</code> and not <code>rules</code>. However webpack will yell at you when doing this incorrectly. </div></blockquote><p>There are more specific properties to define on loaders that we haven&apos;t yet covered.</p>
 <p><a href="/concepts/loaders">Learn more!</a></p>
@@ -96,7 +96,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
     rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-      <span class="token punctuation">{</span>test<span class="token punctuation">:</span> <span class="token regex">/\.(js|jsx)$/</span><span class="token punctuation">,</span> use<span class="token punctuation">:</span> <span class="token string">&apos;babel-loader&apos;</span><span class="token punctuation">}</span>
+      <span class="token punctuation">{</span>test<span class="token punctuation">:</span> <span class="token regex">/\.txt$/</span><span class="token punctuation">,</span> use<span class="token punctuation">:</span> <span class="token string">&apos;raw-loader&apos;</span><span class="token punctuation">}</span>
     <span class="token punctuation">]</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
