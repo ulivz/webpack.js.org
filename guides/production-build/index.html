@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/e40c623c6724e1f9d92f.css" rel="stylesheet">
+      <link href="/6cd7fb888ae4a37cf945.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -200,32 +200,30 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 <pre><code class="lang-js"><span class="token keyword">const</span> Merge <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;webpack-merge&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> CommonConfig <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;./webpack.common.js&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>env<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token function">Merge</span><span class="token punctuation">(</span>CommonConfig<span class="token punctuation">,</span> <span class="token punctuation">{</span>
-    plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
-      <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>LoaderOptionsPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-        minimize<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-        debug<span class="token punctuation">:</span> <span class="token boolean">false</span>
-      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-      <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>DefinePlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-        <span class="token string">&apos;process.env&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          <span class="token string">&apos;NODE_ENV&apos;</span><span class="token punctuation">:</span> JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token string">&apos;production&apos;</span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-      <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>optimize<span class="token punctuation">.</span>UglifyJsPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-        beautify<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
-        mangle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          screw_ie8<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-          keep_fnames<span class="token punctuation">:</span> <span class="token boolean">true</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        compress<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-          screw_ie8<span class="token punctuation">:</span> <span class="token boolean">true</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        comments<span class="token punctuation">:</span> <span class="token boolean">false</span>
-      <span class="token punctuation">}</span><span class="token punctuation">)</span>
-    <span class="token punctuation">]</span>
-  <span class="token punctuation">}</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">Merge</span><span class="token punctuation">(</span>CommonConfig<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>LoaderOptionsPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      minimize<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      debug<span class="token punctuation">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>DefinePlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token string">&apos;process.env&apos;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&apos;NODE_ENV&apos;</span><span class="token punctuation">:</span> JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token string">&apos;production&apos;</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>optimize<span class="token punctuation">.</span>UglifyJsPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      beautify<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      mangle<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        screw_ie8<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        keep_fnames<span class="token punctuation">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      compress<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        screw_ie8<span class="token punctuation">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      comments<span class="token punctuation">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
 <p>You will notice three major updates to our &apos;webpack.prod.js&apos; file:</p>
 <ul>
