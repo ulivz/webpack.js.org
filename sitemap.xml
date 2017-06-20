@@ -22,9 +22,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/license/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/loaders/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/organization/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/loaders/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/pluginsapi/index.html</loc>
     </url>    <url>
@@ -32,17 +32,17 @@
     </url>    <url>
         <loc>https://webpack.js.org/support/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/writers-guide/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/vote/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/api/hot-module-replacement/index.html</loc>
+        <loc>https://webpack.js.org/writers-guide/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/cli/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/api/module-methods/index.html</loc>
+        <loc>https://webpack.js.org/api/hot-module-replacement/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/loaders/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/api/module-methods/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/module-variables/index.html</loc>
     </url>    <url>
@@ -52,9 +52,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/concepts/dependency-graph/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/concepts/configuration/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/concepts/dependency-graph/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/concepts/entry-points/index.html</loc>
     </url>    <url>
@@ -66,15 +66,15 @@
     </url>    <url>
         <loc>https://webpack.js.org/concepts/module-resolution/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/concepts/modules/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/concepts/output/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/concepts/plugins/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/concepts/targets/index.html</loc>
+        <loc>https://webpack.js.org/concepts/modules/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/configuration/configuration-languages/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/configuration/configuration-types/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/configuration/dev-server/index.html</loc>
     </url>    <url>
@@ -82,15 +82,15 @@
     </url>    <url>
         <loc>https://webpack.js.org/configuration/entry-context/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/configuration/configuration-types/index.html</loc>
+        <loc>https://webpack.js.org/configuration/external-configs/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/configuration/externals/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/configuration/external-configs/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/configuration/node/index.html</loc>
+        <loc>https://webpack.js.org/concepts/targets/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/configuration/module/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/configuration/node/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/configuration/other-options/index.html</loc>
     </url>    <url>
@@ -108,17 +108,17 @@
     </url>    <url>
         <loc>https://webpack.js.org/configuration/watch/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/development/how-to-write-a-plugin/index.html</loc>
+        <loc>https://webpack.js.org/development/how-to-write-a-loader/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/development/release-process/index.html</loc>
+        <loc>https://webpack.js.org/development/how-to-write-a-plugin/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/development/plugin-patterns/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/development/how-to-write-a-loader/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/get-started/why-webpack/index.html</loc>
+        <loc>https://webpack.js.org/development/release-process/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/get-started/install-webpack/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/get-started/why-webpack/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/asset-management/index.html</loc>
     </url>    <url>
@@ -142,23 +142,21 @@
     </url>    <url>
         <loc>https://webpack.js.org/guides/comparison/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/guides/dependency-management/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/guides/compatibility/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/guides/dependency-management/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/development/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/development-vagrant/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/guides/environment-variables/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/guides/getting-started/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/hot-module-replacement/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/guides/environment-variables/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/guides/integrations/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/guides/installation/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/lazy-load-react/index.html</loc>
     </url>    <url>
@@ -176,15 +174,17 @@
     </url>    <url>
         <loc>https://webpack.js.org/guides/starter-kits/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/guides/installation/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/guides/tree-shaking/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/typescript/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/guides/why-webpack/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/loaders/bundle-loader/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/loaders/babel-loader/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/loaders/bundle-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/loaders/cache-loader/index.html</loc>
     </url>    <url>
@@ -284,9 +284,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/plugins/environment-plugin/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/plugins/hot-module-replacement-plugin/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/plugins/extract-text-webpack-plugin/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/plugins/hot-module-replacement-plugin/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/html-webpack-plugin/index.html</loc>
     </url>    <url>
@@ -294,13 +294,13 @@
     </url>    <url>
         <loc>https://webpack.js.org/plugins/ignore-plugin/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/plugins/limit-chunk-count-plugin/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/plugins/loader-options-plugin/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/min-chunk-size-plugin/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/no-emit-on-errors-plugin/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/plugins/limit-chunk-count-plugin/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/normal-module-replacement-plugin/index.html</loc>
     </url>    <url>
@@ -318,11 +318,11 @@
     </url>    <url>
         <loc>https://webpack.js.org/vote/moneyDistribution/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/api/plugins/dependency/index.html</loc>
+        <loc>https://webpack.js.org/api/plugins/compilation/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/compiler/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/api/plugins/compilation/index.html</loc>
+        <loc>https://webpack.js.org/api/plugins/dependency/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/module-factories/index.html</loc>
     </url>    <url>
