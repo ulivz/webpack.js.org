@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/fa26aaea11cbddeb377b.css" rel="stylesheet">
+      <link href="/e56afcdd06ae67effc28.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -70,7 +70,7 @@
   <span class="token string">&apos;EXPERIMENTAL_FEATURE&apos;</span><span class="token punctuation">:</span> JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
 </code></pre>
-<h2 class="header"><a class="anchor" href="#service-urls" id="service-urls"></a><span class="text">Service URLs</span><a class="icon-link" href="#service-urls"></a></h2>
+<blockquote class="warning"><div class="tip-content"> When defining values for <code>process</code> prefer <code>&apos;process.env.NODE_ENV&apos;: JSON.stringify(&apos;production&apos;)</code> over <code>process: { env: { NODE_ENV: JSON.stringify(&apos;production&apos;) } }</code>. Using the latter will overwrite the <code>process</code> object which can break compatibility with some modules that expect other values on the process object to be defined. </div></blockquote><h2 class="header"><a class="anchor" href="#service-urls" id="service-urls"></a><span class="text">Service URLs</span><a class="icon-link" href="#service-urls"></a></h2>
 <p>Use a different service URL in production/development builds:</p>
 <pre><code class="lang-javascript"><span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>DefinePlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   <span class="token string">&apos;SERVICE_URL&apos;</span><span class="token punctuation">:</span> JSON<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token string">&quot;http://dev.example.com&quot;</span><span class="token punctuation">)</span>
