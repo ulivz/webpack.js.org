@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/d22bb39b7afaed4a7c10.css" rel="stylesheet">
+      <link href="/32412162d2025bd78126.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -24,7 +24,7 @@
 <p>This is an object where each property is the name of a Node global or module and each value may be one of the following...</p>
 <ul>
 <li><code>true</code>: Provide a polyfill.</li>
-<li><code>&quot;mock&quot;</code>: Provide a mock that implements the expected interface but has little or no fuctionality.</li>
+<li><code>&quot;mock&quot;</code>: Provide a mock that implements the expected interface but has little or no functionality.</li>
 <li><code>&quot;empty&quot;</code>: Provide an empty object.</li>
 <li><code>false</code>: Provide nothing. Code that expects this object to be defined may crash.</li>
 </ul>
@@ -39,6 +39,7 @@
   setImmediate<span class="token punctuation">:</span> <span class="token boolean">true</span>
 <span class="token punctuation">}</span>
 </code></pre>
+<p>Since webpack 3.0.0, the <code>node</code> option may be set to <code>false</code> to turn off the <code>NodeSourcePlugin</code> completely.</p>
 <h2 class="header"><a class="anchor" href="#node-console" id="node-console"></a><span class="text"><code>node.console</code></span><a class="icon-link" href="#node-console"></a></h2>
 <p><code>boolean | &quot;mock&quot;</code></p>
 <p>Default: <code>false</code></p>
