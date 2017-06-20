@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/5873e6c2fb921e352c15.css" rel="stylesheet">
+      <link href="/fa26aaea11cbddeb377b.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -174,7 +174,7 @@ npm <span class="token function">install</span> --save moment
 <span class="token punctuation">}</span>
 </code></pre>
 <h3 class="header"><a class="anchor" href="#system-import-is-deprecated" id="system-import-is-deprecated"></a><span class="text"><code>System.import</code> is deprecated</span><a class="icon-link" href="#system-import-is-deprecated"></a></h3>
-<p>The use of <code>System.import</code> in webpack <a href="https://github.com/webpack/webpack/issues/2163">did not fit the proposed spec</a>, so it was deprecated in <a href="https://github.com/webpack/webpack/releases/tag/v2.1.0-beta.28">v2.1.0-beta.28</a> in favor of <code>import()</code>.</p>
+<p>The use of <code>System.import</code> in webpack <a href="https://github.com/webpack/webpack/issues/2163">did not fit the proposed spec</a>, so it was deprecated in webpack <a href="https://github.com/webpack/webpack/releases/tag/v2.1.0-beta.28">2.1.0-beta.28</a> in favor of <code>import()</code>.</p>
 <h2 class="header"><a class="anchor" href="#require-ensure-" id="require-ensure-"></a><span class="text"><code>require.ensure()</code></span><a class="icon-link" href="#require-ensure-"></a></h2>
 <blockquote class="warning"><div class="tip-content"> <code>require.ensure()</code> is specific to webpack and superseded by <code>import()</code>. </div></blockquote><p>webpack statically parses for <code>require.ensure()</code> in the code while building. Any module that is referenced as a dependency or <code>require()</code>d within the callback function, will be added to a new chunk. This new chunk is written to an async bundle that is loaded on demand by webpack through jsonp.</p>
 <p>The syntax is as follows:</p>

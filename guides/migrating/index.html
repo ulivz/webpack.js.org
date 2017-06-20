@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/5873e6c2fb921e352c15.css" rel="stylesheet">
+      <link href="/fa26aaea11cbddeb377b.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -419,9 +419,9 @@ book<span class="token punctuation">.</span><span class="token keyword">default<
   }
 </code></pre>
 <h3 class="header"><a class="anchor" href="#complex-options" id="complex-options"></a><span class="text">Complex options</span><a class="icon-link" href="#complex-options"></a></h3>
-<p><strong>webpack v1</strong> only supports <code>JSON.stringify</code>-able options for loaders.</p>
-<p><strong>webpack v2</strong> now supports any JS object as loader options.</p>
-<p>Before <a href="https://github.com/webpack/webpack/releases/tag/v2.2.1">v2.2.1</a> (i.e. from v2.0.0 through v2.2.0), using complex options required using <code>ident</code> for the <code>options</code> object to allow its reference from other loaders. <strong>This was removed in v2.2.1</strong> and thus current migrations do not require any use of the <code>ident</code> key.</p>
+<p><strong>webpack 1</strong> only supports <code>JSON.stringify</code>-able options for loaders.</p>
+<p><strong>webpack 2</strong> now supports any JS object as loader options.</p>
+<p>Before webpack <a href="https://github.com/webpack/webpack/releases/tag/v2.2.1">2.2.1</a> (i.e. from 2.0.0 through 2.2.0), using complex options required using <code>ident</code> for the <code>options</code> object to allow its reference from other loaders. <strong>This was removed in 2.2.1</strong> and thus current migrations do not require any use of the <code>ident</code> key.</p>
 <pre><code class="lang-diff">{
   test: /\.ext/
   use: {
