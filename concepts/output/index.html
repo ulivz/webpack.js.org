@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/5300fdd53cde26c519db.css" rel="stylesheet">
+      <link href="/7968826870cacacd1cb3.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -157,10 +157,13 @@ module<span class="token punctuation">.</span>exports <span class="token operato
 <span class="token comment" spellcheck="true">// rest of your application entry</span>
 </code></pre>
 <h3 class="header"><a class="anchor" href="#output-sourcemapfilename" id="output-sourcemapfilename"></a><span class="text"><code>output.sourceMapFilename</code></span><a class="icon-link" href="#output-sourcemapfilename"></a></h3>
-<p>The filename of the SourceMaps for the JavaScript files. They are inside the <code>output.path</code> directory.</p>
-<p><code>[file]</code> is replaced by the filename of the JavaScript file.</p>
-<p><code>[id]</code> is replaced by the id of the chunk.</p>
-<p><code>[hash]</code> is replaced by the hash of the compilation.</p>
+<p>Source Map filenames for JavaScript modules.</p>
+<ul>
+<li><code>[file]</code> is replaced by the filename of the JavaScript file.</li>
+<li><code>[id]</code> is replaced by the id of the chunk.</li>
+<li><code>[hash]</code> is replaced by the hash of the compilation.</li>
+<li><code>[contenthash]</code> is replaced by the hash of the extracted file (since webpack 3.0.0).</li>
+</ul>
 <blockquote>
 <p>Default: <code>&quot;[file].map&quot;</code></p>
 </blockquote>
