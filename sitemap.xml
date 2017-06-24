@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">    <url>
         <loc>https://webpack.js.org/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/analyze/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/api/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/analyze/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/branding/index.html</loc>
     </url>    <url>
@@ -26,9 +26,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/organization/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/pluginsapi/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/plugins/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/pluginsapi/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/support/index.html</loc>
     </url>    <url>
@@ -52,13 +52,13 @@
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/concepts/configuration/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/concepts/dependency-graph/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/concepts/entry-points/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/concepts/hot-module-replacement/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/concepts/configuration/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/concepts/loaders/index.html</loc>
     </url>    <url>
@@ -188,11 +188,11 @@
     </url>    <url>
         <loc>https://webpack.js.org/loaders/cache-loader/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/loaders/coffee-loader/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/loaders/coffee-redux-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/loaders/coverjs-loader/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/loaders/coffee-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/loaders/css-loader/index.html</loc>
     </url>    <url>
@@ -260,10 +260,6 @@
     </url>    <url>
         <loc>https://webpack.js.org/loaders/yaml-frontmatter-loader/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/pluginsapi/compiler/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/pluginsapi/template/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/plugins/babili-webpack-plugin/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/banner-plugin/index.html</loc>
@@ -312,17 +308,21 @@
     </url>    <url>
         <loc>https://webpack.js.org/plugins/zopfli-webpack-plugin/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/pluginsapi/compiler/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/pluginsapi/template/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/vote/feedback/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/vote/moneyDistribution/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/api/plugins/compilation/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/compiler/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/dependency/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/module-factories/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/api/plugins/compilation/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/parser/index.html</loc>
     </url>    <url>
