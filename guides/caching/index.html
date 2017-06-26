@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/fba57e8f2c078f92097a.css" rel="stylesheet">
+      <link href="/cebdf40f1bd915f8ea2e.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -36,8 +36,7 @@
 <pre><code class="lang-bash">application.js?build<span class="token operator">=</span>1
 application.css?build<span class="token operator">=</span>1
 </code></pre>
-<p>It is even easier to do with webpack. Each webpack build generates a unique hash which can be used to compose a filename, by including output <a href="/concepts/output/#options">placeholders</a>.
-The following example config will generate 2 files (1 per entry) with hashes in filenames:</p>
+<p>It is even easier to do with webpack. Each webpack build generates a unique hash which can be used to compose a filename, by including output <a href="/configuration/output#output-filename">substitutions</a>. The following example config will generate 2 files (1 per entry) with hashes in filenames:</p>
 <pre><code class="lang-js"><span class="token comment" spellcheck="true">// webpack.config.js</span>
 <span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 

@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/fba57e8f2c078f92097a.css" rel="stylesheet">
+      <link href="/cebdf40f1bd915f8ea2e.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -22,19 +22,19 @@
 <h3 class="header"><a class="anchor" href="#before-resolve-data-async-waterfall" id="before-resolve-data-async-waterfall"></a><span class="text"><code>before-resolve(data)</code> async waterfall</span><a class="icon-link" href="#before-resolve-data-async-waterfall"></a></h3>
 <p>Before the factory starts resolving. The <code>data</code> object has these properties:</p>
 <ul>
-<li><code>context</code> The absolute path of the directory for resolving.</li>
-<li><code>request</code> The request of the expression.</li>
+<li><code>context</code>: The absolute path of the directory for resolving.</li>
+<li><code>request</code>: The request of the expression.</li>
 </ul>
 <p>Plugins are allowed to modify the object or to pass a new similar object to the callback.</p>
 <h3 class="header"><a class="anchor" href="#after-resolve-data-async-waterfall" id="after-resolve-data-async-waterfall"></a><span class="text"><code>after-resolve(data)</code> async waterfall</span><a class="icon-link" href="#after-resolve-data-async-waterfall"></a></h3>
 <p>After the factory has resolved the request. The <code>data</code> object has these properties:</p>
 <ul>
-<li><code>request</code> The resolved request. It acts as an identifier for the NormalModule.</li>
-<li><code>userRequest</code> The request the user entered. It&apos;s resolved, but does not contain pre or post loaders.</li>
-<li><code>rawRequest</code> The unresolved request.</li>
-<li><code>loaders</code> A array of resolved loaders. This is passed to the NormalModule and they will be executed.</li>
-<li><code>resource</code> The resource. It will be loaded by the NormalModule.</li>
-<li><code>parser</code> The parser that will be used by the NormalModule.</li>
+<li><code>request</code>: The resolved request. It acts as an identifier for the NormalModule.</li>
+<li><code>userRequest</code>: The request the user entered. It&apos;s resolved, but does not contain pre or post loaders.</li>
+<li><code>rawRequest</code>: The unresolved request.</li>
+<li><code>loaders</code>: A array of resolved loaders. This is passed to the NormalModule and they will be executed.</li>
+<li><code>resource</code>: The resource. It will be loaded by the NormalModule.</li>
+<li><code>parser</code>: The parser that will be used by the NormalModule.</li>
 </ul>
 <h2 class="header"><a class="anchor" href="#contextmodulefactory" id="contextmodulefactory"></a><span class="text"><code>ContextModuleFactory</code></span><a class="icon-link" href="#contextmodulefactory"></a></h2>
 <h3 class="header"><a class="anchor" href="#before-resolve-data-async-waterfall" id="before-resolve-data-async-waterfall"></a><span class="text"><code>before-resolve(data)</code> async waterfall</span><a class="icon-link" href="#before-resolve-data-async-waterfall"></a></h3>

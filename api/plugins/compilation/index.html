@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/fba57e8f2c078f92097a.css" rel="stylesheet">
+      <link href="/cebdf40f1bd915f8ea2e.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -64,12 +64,12 @@
 <pre><code class="lang-javascript"><span class="token comment" spellcheck="true">//optimize chunks may be run several times in a compilation</span>
 
 compilation<span class="token punctuation">.</span><span class="token function">plugin</span><span class="token punctuation">(</span><span class="token string">&apos;optimize-chunks&apos;</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span>chunks<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">//unless you specified multiple entries in your config</span>
-    <span class="token comment" spellcheck="true">//there&apos;s only one chunk at this point</span>
+    <span class="token comment" spellcheck="true">// Unless you&apos;ve specified multiple entries in your config</span>
+    <span class="token comment" spellcheck="true">// there&apos;s only one chunk at this point</span>
     chunks<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>chunk<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token comment" spellcheck="true">//chunks have circular references to their modules</span>
+        <span class="token comment" spellcheck="true">// Chunks have circular references to their modules</span>
         chunk<span class="token punctuation">.</span>modules<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>module<span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token comment" spellcheck="true">//module.loaders, module.rawRequest, module.dependencies, etc.</span>
+            <span class="token comment" spellcheck="true">// module.loaders, module.rawRequest, module.dependencies, etc.</span>
         <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
