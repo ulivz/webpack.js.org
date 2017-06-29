@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/37aa16cd315bec2536cb.css" rel="stylesheet">
+      <link href="/b38325711551440e6908.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -70,8 +70,16 @@ externals <span class="token punctuation">:</span> <span class="token punctuatio
     root<span class="token punctuation">:</span> <span class="token string">&quot;_&quot;</span> <span class="token comment" spellcheck="true">// indicates global variable</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// or</span>
+
+externals <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  subtract <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    root<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&quot;math&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;subtract&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
 </code></pre>
-<p>This syntax is used to describe all the possible ways that an external library can be available. <code>lodash</code> here is available as <code>lodash</code> under AMD and CommonJS module systems but available as <code>_</code> in a global variable form.</p>
+<p>This syntax is used to describe all the possible ways that an external library can be available. <code>lodash</code> here is available as <code>lodash</code> under AMD and CommonJS module systems but available as <code>_</code> in a global variable form. <code>subtract</code> here is available via the property <code>subtract</code> under the global <code>math</code> object (e.g. <code>window[&apos;math&apos;][&apos;subtract&apos;]</code>).</p>
 <h3 class="header"><a class="anchor" href="#function" id="function"></a><span class="text">function</span><a class="icon-link" href="#function"></a></h3>
 <p>It might be useful to define your own function to control the behavior of what you want to externalize from webpack. <a href="https://www.npmjs.com/package/webpack-node-externals">webpack-node-externals</a>, for example, excludes all modules from the node_modules and provides some options to, for example, whitelist packages.</p>
 <p>It basically comes down to this:</p>
