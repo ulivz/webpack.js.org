@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/cbbf34316b050db6745e.css" rel="stylesheet">
+      <link href="/9765ab746e5696f40755.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -39,7 +39,8 @@
 <h2 class="header"><a class="anchor" href="#auto-generated-html" id="auto-generated-html"></a><span class="text">Auto-Generated HTML</span><a class="icon-link" href="#auto-generated-html"></a></h2>
 <p>In comes the <a href="/plugins/html-webpack-plugin"><code>HtmlWebpackPlugin</code></a> to save the day. Using this plugin, you can stop hard-coding the output filenames into a manually-managed file and, instead, sit back as webpack auto-generates an <code>index.html</code> file for you. Let&apos;s take a look at what you&apos;ll need to add to your configuration:</p>
 <p><strong>webpack.config.js</strong></p>
-<pre><code class="lang-js"><span class="token keyword">var</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;html-webpack-plugin&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<pre><code class="lang-js"><span class="token keyword">var</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;path&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> HtmlWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;html-webpack-plugin&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
   entry<span class="token punctuation">:</span> <span class="token punctuation">{</span>
@@ -48,7 +49,7 @@ module<span class="token punctuation">.</span>exports <span class="token operato
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 
   output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
-    path<span class="token punctuation">:</span> <span class="token string">&apos;dist&apos;</span><span class="token punctuation">,</span>
+    path<span class="token punctuation">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">&apos;dist&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
     filename<span class="token punctuation">:</span> <span class="token string">&apos;[name].bundle.js&apos;</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 
