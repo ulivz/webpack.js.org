@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/00c4a8ce26a5a3a16b92.css" rel="stylesheet">
+      <link href="/0f12472d45f6d53ba93f.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -181,7 +181,7 @@ another.bundle.js  537 bytes       1  <span class="token punctuation">[</span>em
 -
 <span class="token deleted">-   // Lodash, now imported by this script</span>
 <span class="token deleted">-   element.innerHTML = _.join([&apos;Hello&apos;, &apos;webpack&apos;], &apos; &apos;);</span>
-<span class="token inserted">+   return import(/* webpackChunkName: &quot;lodash&quot; */ &apos;lodash&apos;).then(module =&gt; {</span>
+<span class="token inserted">+   return import(/* webpackChunkName: &quot;lodash&quot; */ &apos;lodash&apos;).then(_ =&gt; {</span>
 <span class="token inserted">+     var element = document.createElement(&apos;div&apos;);</span>
 +
 <span class="token inserted">+     element.innerHTML = _.join([&apos;Hello&apos;, &apos;webpack&apos;], &apos; &apos;);</span>
