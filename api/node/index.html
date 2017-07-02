@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/6d666ce67f7b5d36ac13.css" rel="stylesheet">
+      <link href="/ca45c8055381e9a2684b.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -105,10 +105,9 @@ compiler<span class="token punctuation">.</span><span class="token function">run
 <li>Errors and Warnings (if any)</li>
 <li>Timings</li>
 <li>Module and Chunk information</li>
-<li>and much more...</li>
 </ul>
 <p>The <a href="/api/cli">webpack CLI</a> uses this information to display a nicely formatted output in your console.</p>
-<p>This object exposes these methods:</p>
+<blockquote class="tip"><div class="tip-content"> When using the <a href="/api/plugins/compiler#multicompiler"><code>MultiCompiler</code></a>, a <code>MultiStats</code> instance is returned that fulfills the same interface as <code>stats</code>, i.e. the methods described below. </div></blockquote><p>This <code>stats</code> object exposes the following methods:</p>
 <h3 class="header"><a class="anchor" href="#stats-haserrors-" id="stats-haserrors-"></a><span class="text"><code>stats.hasErrors()</code></span><a class="icon-link" href="#stats-haserrors-"></a></h3>
 <p>Can be used to check if there were errors while compiling. Returns <code>true</code> or <code>false</code>.</p>
 <h3 class="header"><a class="anchor" href="#stats-haswarnings-" id="stats-haswarnings-"></a><span class="text"><code>stats.hasWarnings()</code></span><a class="icon-link" href="#stats-haswarnings-"></a></h3>
