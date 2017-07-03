@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/b9d22481c5a189be7149.css" rel="stylesheet">
+      <link href="/ab0787ee2ec193e0e00e.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -27,15 +27,15 @@
 </ol>
 <h2 class="header"><a class="anchor" href="#yaml-frontmatter" id="yaml-frontmatter"></a><span class="text">YAML Frontmatter</span><a class="icon-link" href="#yaml-frontmatter"></a></h2>
 <p>Each article contains a small section at the top written in <a href="">YAML Frontmatter</a>:</p>
-<pre><code class="lang-md">---
-title: My Article
-sort: 3
-contributors:
-  - [github username]
-related:
-  - title: Title of Related Article
-    url: [url of related article]
----
+<pre><code class="lang-yaml"><span class="token punctuation">---</span>
+<span class="token key atrule">title</span><span class="token punctuation">:</span> My Article
+<span class="token key atrule">sort</span><span class="token punctuation">:</span> <span class="token number">3</span>
+<span class="token key atrule">contributors</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token punctuation">[</span>github username<span class="token punctuation">]</span>
+<span class="token key atrule">related</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> <span class="token key atrule">title</span><span class="token punctuation">:</span> Title of Related Article
+    <span class="token key atrule">url</span><span class="token punctuation">:</span> <span class="token punctuation">[</span>url of related article<span class="token punctuation">]</span>
+<span class="token punctuation">---</span>
 </code></pre>
 <p>Let&apos;s break these down:</p>
 <ul>
@@ -44,10 +44,10 @@ related:
 <li><code>contributors</code>: A list of GitHub usernames who have contributed to this article.</li>
 <li><code>related</code>: Any related reading or useful examples.</li>
 </ul>
-<p>Note that <code>related</code> will generate a <strong>Further Reading</strong> section at the bottom of the page and <code>contributors</code> will yield a <strong>Contributors</strong> section below it. If you edit an article and would like recognition, please feel free to add your GitHub username to the <code>contributors</code> list.</p>
+<p>Note that <code>related</code> will generate a <strong>Further Reading</strong> section at the bottom of the page and <code>contributors</code> will yield a <strong>Contributors</strong> section below it. If you edit an article and would like recognition, don&apos;t hesitate to add your GitHub username to the <code>contributors</code> list.</p>
 <h2 class="header"><a class="anchor" href="#article-structure" id="article-structure"></a><span class="text">Article Structure</span><a class="icon-link" href="#article-structure"></a></h2>
 <ol>
-<li>Brief Introduction - a paragraph or two so you get the basic idea about the what and why. </li>
+<li>Brief Introduction - a paragraph or two so you get the basic idea about the what and why.</li>
 <li>Outline Remaining Content &#x2013; how the content will be presented.</li>
 <li>Main Content - tell what you promised to tell.</li>
 <li>Conclusion - tell what you told and recap the main points.</li>
