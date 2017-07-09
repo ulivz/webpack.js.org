@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/5180b73b50d0d44bd3c2.css" rel="stylesheet">
+      <link href="/8eb738092ae0075512ae.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -47,7 +47,7 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <h2 class="header"><a class="anchor" href="#exporting-multiple-configurations" id="exporting-multiple-configurations"></a><span class="text">Exporting multiple configurations</span><a class="icon-link" href="#exporting-multiple-configurations"></a></h2>
-<p>Instead of exporting a single configuration object/function, you may export multiple configurations. When running webpack, all configurations are built. For instance, this is useful for <a href="/guides/author-libraries">bundling a library</a> for multiple <a href="/configuration/output#output-librarytarget">targets</a> such as AMD and CommonJS:</p>
+<p>Instead of exporting a single configuration object/function, you may export multiple configurations (multiple functions are supported since webpack 3.1.0). When running webpack, all configurations are built. For instance, this is useful for <a href="/guides/author-libraries">bundling a library</a> for multiple <a href="/configuration/output#output-librarytarget">targets</a> such as AMD and CommonJS:</p>
 <pre><code class="lang-js">module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
   output<span class="token punctuation">:</span> <span class="token punctuation">{</span>
     filename<span class="token punctuation">:</span> <span class="token string">&apos;./dist-amd.js&apos;</span><span class="token punctuation">,</span>

@@ -54,13 +54,13 @@
     </url>    <url>
         <loc>https://webpack.js.org/api/plugins/index.html</loc>
     </url>    <url>
+        <loc>https://webpack.js.org/concepts/configuration/index.html</loc>
+    </url>    <url>
         <loc>https://webpack.js.org/concepts/dependency-graph/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/concepts/entry-points/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/concepts/hot-module-replacement/index.html</loc>
-    </url>    <url>
-        <loc>https://webpack.js.org/concepts/configuration/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/concepts/loaders/index.html</loc>
     </url>    <url>
@@ -246,9 +246,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/loaders/val-loader/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/loaders/worker-loader/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/loaders/yaml-frontmatter-loader/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/loaders/worker-loader/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/babili-webpack-plugin/index.html</loc>
     </url>    <url>
@@ -274,9 +274,9 @@
     </url>    <url>
         <loc>https://webpack.js.org/plugins/html-webpack-plugin/index.html</loc>
     </url>    <url>
-        <loc>https://webpack.js.org/plugins/ignore-plugin/index.html</loc>
-    </url>    <url>
         <loc>https://webpack.js.org/plugins/i18n-webpack-plugin/index.html</loc>
+    </url>    <url>
+        <loc>https://webpack.js.org/plugins/ignore-plugin/index.html</loc>
     </url>    <url>
         <loc>https://webpack.js.org/plugins/limit-chunk-count-plugin/index.html</loc>
     </url>    <url>
