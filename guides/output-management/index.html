@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/cf8401072748157b703f.css" rel="stylesheet">
+      <link href="/3b5cd61c58d89ab9aca9.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -159,7 +159,7 @@ Child html-webpack-plugin <span class="token keyword">for</span> <span class="to
 <p><strong>webpack.config.js</strong></p>
 <pre><code class="lang-diff">  const path = require(&apos;path&apos;);
   const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;);
-  const CleanWebpackPlugin = require(&apos;clean-webpack-plugin&apos;);
+<span class="token inserted">+ const CleanWebpackPlugin = require(&apos;clean-webpack-plugin&apos;);</span>
 
   module.exports = {
     entry: {
@@ -169,9 +169,7 @@ Child html-webpack-plugin <span class="token keyword">for</span> <span class="to
     plugins: [
 <span class="token inserted">+     new CleanWebpackPlugin([&apos;dist&apos;]),</span>
       new HtmlWebpackPlugin({
-        title: &apos;Output Management&apos;,
-        filename: &apos;index.html&apos;,
-        template: &apos;src/index.html&apos;
+        title: &apos;Output Management&apos;
       })
     ],
     output: {
