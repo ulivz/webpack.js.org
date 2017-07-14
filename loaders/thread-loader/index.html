@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/e125fdabf61a8c901643.css" rel="stylesheet">
+      <link href="/cf8401072748157b703f.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -54,6 +54,7 @@
 <pre><code class="lang-js">use<span class="token punctuation">:</span> <span class="token punctuation">[</span>
   <span class="token punctuation">{</span>
     loader<span class="token punctuation">:</span> <span class="token string">&quot;thread-loader&quot;</span><span class="token punctuation">,</span>
+    <span class="token comment" spellcheck="true">// loaders with equal options will share worker pools</span>
     options<span class="token punctuation">:</span> <span class="token punctuation">{</span>
       <span class="token comment" spellcheck="true">// the number of spawned workers, defaults to number of cpus</span>
       workers<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
@@ -73,11 +74,31 @@
       <span class="token comment" spellcheck="true">// number of jobs the poll distributes to the workers</span>
       <span class="token comment" spellcheck="true">// defaults to 200</span>
       <span class="token comment" spellcheck="true">// decrease of less efficient but more fair distribution</span>
-      poolParallelJobs<span class="token punctuation">:</span> <span class="token number">50</span>
+      poolParallelJobs<span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+
+      <span class="token comment" spellcheck="true">// name of the pool</span>
+      <span class="token comment" spellcheck="true">// can be used to create different pools with elsewise identical options</span>
+      name<span class="token punctuation">:</span> <span class="token string">&quot;my-pool&quot;</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token string">&quot;expensive-loader&quot;</span>
 <span class="token punctuation">]</span>
+</code></pre>
+<p><strong>prewarming</strong></p>
+<p>To prevent the high delay when booting workers it possible to warmup the worker pool.</p>
+<p>This boots the max number of workers in the pool and loads specified modules into the node.js module cache.</p>
+<pre><code class="lang-js"><span class="token keyword">const</span> threadLoader <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;thread-loader&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+threadLoader<span class="token punctuation">.</span><span class="token function">warup</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// pool options, like passed to loader options</span>
+  <span class="token comment" spellcheck="true">// must match loader options to boot the correct pool</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+  <span class="token comment" spellcheck="true">// modules to load</span>
+  <span class="token comment" spellcheck="true">// can be any module, i. e.</span>
+  <span class="token string">&apos;babel-loader&apos;</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;babel-preset-es2015&apos;</span><span class="token punctuation">,</span>
+  <span class="token string">&apos;sass-loader&apos;</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
 <h2 class="header"><a class="anchor" href="#maintainers" id="maintainers"></a><span class="text">Maintainers</span><a class="icon-link" href="#maintainers"></a></h2>
 <table><tbody><tr><td align="center"><p><a href="https://github.com/sokra"></a></p>
