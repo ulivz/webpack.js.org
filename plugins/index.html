@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/e3ddf1b38187932c5c2c.css" rel="stylesheet">
+      <link href="/801e510da54995bca63d.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -31,6 +31,48 @@
 	        Name
 	    </div>
 	    <div class="table-td-content">
+	        <a href="/plugins/babili-webpack-plugin"><code>BabiliWebpackPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        Babel based minification: <a href="https://github.com/babel/babili">Babili</a>
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/banner-plugin"><code>BannerPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        Add a banner to the top of each generated chunk
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/context-replacement-plugin"><code>ContextReplacementPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        Override the inferred context of a <code>require</code> expression
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
 	        <a href="/plugins/commons-chunk-plugin"><code>CommonsChunkPlugin</code></a>
 	    </div>
 	  </div><div class="table-td">
@@ -38,7 +80,7 @@
 	        Description
 	    </div>
 	    <div class="table-td-content">
-	        Generates chunks of common modules shared between entry points and splits them into separate  bundles, e.g., <code>vendor.bundle.js</code> &amp;&amp; <code>app.bundle.js</code>
+	        Extract common modules shared between chunks
 	    </div>
 	  </div></div><div class="table-tr"><div class="table-td">
 	    <div class="table-td-title">
@@ -80,21 +122,7 @@
 	        Description
 	    </div>
 	    <div class="table-td-content">
-	        Allows global constants configured at compile time, useful for allowing different behavior between dev/release builds
-	    </div>
-	  </div></div><div class="table-tr"><div class="table-td">
-	    <div class="table-td-title">
-	        Name
-	    </div>
-	    <div class="table-td-content">
-	        <a href="/plugins/environment-plugin"><code>EnvironmentPlugin</code></a>
-	    </div>
-	  </div><div class="table-td">
-	    <div class="table-td-title">
-	        Description
-	    </div>
-	    <div class="table-td-content">
-	        Shorthand for using the <a href="./define-plugin"><code>DefinePlugin</code></a> on <code>process.env</code> keys.
+	        Allow global constants configured at compile time
 	    </div>
 	  </div></div><div class="table-tr"><div class="table-td">
 	    <div class="table-td-title">
@@ -108,7 +136,21 @@
 	        Description
 	    </div>
 	    <div class="table-td-content">
-	        Provide means to split bundles in a way that can drastically improve build time performance.
+	        Split bundles in order to drastically improve build time
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/environment-plugin"><code>EnvironmentPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        Shorthand for using the <a href="./define-plugin"><code>DefinePlugin</code></a> on <code>process.env</code> keys
 	    </div>
 	  </div></div><div class="table-tr"><div class="table-td">
 	    <div class="table-td-title">
@@ -122,7 +164,21 @@
 	        Description
 	    </div>
 	    <div class="table-td-content">
-	        Extracts Text (CSS) from your bundles into a separate file (app.bundle.css)
+	        Extract text (CSS) from your bundles into a separate file
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/hot-module-replacement-plugin"><code>HotModuleReplacementPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        Enable Hot Module Replacement (HMR)
 	    </div>
 	  </div></div><div class="table-tr"><div class="table-td">
 	    <div class="table-td-title">
@@ -136,21 +192,7 @@
 	        Description
 	    </div>
 	    <div class="table-td-content">
-	        Simplifies creation of HTML files (<code>index.html</code>) to serve your bundles
-	    </div>
-	  </div></div><div class="table-tr"><div class="table-td">
-	    <div class="table-td-title">
-	        Name
-	    </div>
-	    <div class="table-td-content">
-	        <a href="/plugins/ignore-plugin"><code>IgnorePlugin</code></a>
-	    </div>
-	  </div><div class="table-td">
-	    <div class="table-td-title">
-	        Description
-	    </div>
-	    <div class="table-td-content">
-	        Excludes certain modules from bundles
+	        Easily create HTML files to serve your bundles
 	    </div>
 	  </div></div><div class="table-tr"><div class="table-td">
 	    <div class="table-td-title">
@@ -164,7 +206,21 @@
 	        Description
 	    </div>
 	    <div class="table-td-content">
-	        Adds i18n support to your bundles
+	        Add i18n support to your bundles
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/ignore-plugin"><code>IgnorePlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        Exclude certain modules from bundles
 	    </div>
 	  </div></div><div class="table-tr"><div class="table-td">
 	    <div class="table-td-title">
@@ -178,28 +234,224 @@
 	        Description
 	    </div>
 	    <div class="table-td-content">
-	        Set min/max limits for chunking to fine tune and control chunking
+	        Set min/max limits for chunking to better control chunking
 	    </div>
 	  </div></div><div class="table-tr"><div class="table-td">
 	    <div class="table-td-title">
 	        Name
 	    </div>
 	    <div class="table-td-content">
-	        <a href="/plugins/normal-module-replacement-plugin"><code>NormalModuleReplacementPlugin</code></a>
+	        
 	    </div>
 	  </div><div class="table-td">
 	    <div class="table-td-title">
 	        Description
 	    </div>
 	    <div class="table-td-content">
-	        Replaces resource that matches a regexp
+	        <a href="/plugins/loader-options-plugin"><code>LoaderOptionsPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        
+	    </div>
+	    <div class="table-td-content">
+	        Used for migrating from webpack 1 to 2
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/min-chunk-size-plugin"><code>MinChunkSizePlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        
+	    </div>
+	    <div class="table-td-content">
+	        Keep chunk size above the specified limit
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/normal-module-replacement-plugin"><code>NormalModuleReplacementPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        
+	    </div>
+	    <div class="table-td-content">
+	        Replace resource(s) that matches a regexp
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/no-emit-on-errors-plugin"><code>NoEmitOnErrorsPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        
+	    </div>
+	    <div class="table-td-content">
+	        Skip the emitting phase when there are compilation errors
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/normal-module-replacement-plugin"><code>NormalModuleReplacementPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        
+	    </div>
+	    <div class="table-td-content">
+	        Replace one resource with another
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/npm-install-webpack-plugin"><code>NpmInstallWebpackPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        
+	    </div>
+	    <div class="table-td-content">
+	        Auto-install missing dependencies during development
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/provide-plugin"><code>ProvidePlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        
+	    </div>
+	    <div class="table-td-content">
+	        Use modules without having to use import/require
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/source-map-dev-tool-plugin"><code>SourceMapDevToolPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        
+	    </div>
+	    <div class="table-td-content">
+	        Enables a more fine grained control of source maps
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/uglifyjs-webpack-plugin"><code>UglifyjsWebpackPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        
+	    </div>
+	    <div class="table-td-content">
+	        Enables control of the version of UglifyJS in your project
+	    </div>
+	  </div></div><div class="table-tr"><div class="table-td">
+	    <div class="table-td-title">
+	        Name
+	    </div>
+	    <div class="table-td-content">
+	        
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        Description
+	    </div>
+	    <div class="table-td-content">
+	        <a href="/plugins/zopfli-webpack-plugin"><code>ZopfliWebpackPlugin</code></a>
+	    </div>
+	  </div><div class="table-td">
+	    <div class="table-td-title">
+	        
+	    </div>
+	    <div class="table-td-content">
+	        Prepare compressed versions of assets with node-zopfli
 	    </div>
 	  </div></div>
 	          </div>
 	        </div>
-	    </div><p><img src="../assets/awesome-badge.svg" alt="Awesome">
-For more third-party plugins, see the list from <a href="https://github.com/webpack-contrib/awesome-webpack#webpack-plugins">awesome-webpack</a>.</p>
-</div><div><hr><h3>Contributors</h3><div class="contributors"><div class="contributors__list"><a class="contributor" href="https://github.com/aretecode"><img src="https://github.com/aretecode.png?size=90"><span class="contributor__name"> aretecode</span></a><a class="contributor" href="https://github.com/gonzoyumo"><img src="https://github.com/gonzoyumo.png?size=90"><span class="contributor__name"> gonzoyumo</span></a><a class="contributor" href="https://github.com/rouzbeh84"><img src="https://github.com/rouzbeh84.png?size=90"><span class="contributor__name"> rouzbeh84</span></a><a class="contributor" href="https://github.com/simon04"><img src="https://github.com/simon04.png?size=90"><span class="contributor__name"> simon04</span></a></div></div></div><div class="interactive" id="components/gitter/gitter.jsx" data-props="{}"><span class="gitter"></span></div></section></div><footer class="footer"><div class="container footer__inner"><section class="footer__left"><a href="/guides/getting-started" class="footer__link">Getting Started</a><a href="/organization" class="footer__link">Organization</a><a href="/support" class="footer__link">Support</a><a href="/comparison" class="footer__link">Comparison</a></section><section class="footer__middle"><a href="/" class="footer__icon"><img src="/6bc5d8cf78d442a984e70195db059b69.svg" alt="webpack icon"></a></section><section class="footer__right"><a href="/glossary" class="footer__link">Glossary</a><a href="/branding" class="footer__link">Branding</a><a href="//gitter.im/webpack/webpack" target="_blank" class="footer__link">Gitter</a><a href="https://github.com/webpack/webpack/releases" target="_blank" class="footer__link">Changelog</a><a href="/license" class="footer__link footer__license"><img alt="Creative Commons License" src="/c983c925f14c5a308465ce5f912be111.svg"><img alt="Creative Commons License" src="/c440e4e11ad72daf1899ca0616ddd8b8.svg"></a></section></div></footer><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-46921629-2', 'auto');ga('send', 'pageview');</script></div>
+	    </div><p>For more third-party plugins, see the list from <a href="https://github.com/webpack-contrib/awesome-webpack#webpack-plugins">awesome-webpack</a>.</p>
+<p><img src="../assets/awesome-badge.svg" alt="Awesome"></p>
+</div><div><hr><h3>Contributors</h3><div class="contributors"><div class="contributors__list"><a class="contributor" href="https://github.com/aretecode"><img src="https://github.com/aretecode.png?size=90"><span class="contributor__name"> aretecode</span></a><a class="contributor" href="https://github.com/eko3alpha"><img src="https://github.com/eko3alpha.png?size=90"><span class="contributor__name"> eko3alpha</span></a><a class="contributor" href="https://github.com/gonzoyumo"><img src="https://github.com/gonzoyumo.png?size=90"><span class="contributor__name"> gonzoyumo</span></a><a class="contributor" href="https://github.com/rouzbeh84"><img src="https://github.com/rouzbeh84.png?size=90"><span class="contributor__name"> rouzbeh84</span></a><a class="contributor" href="https://github.com/simon04"><img src="https://github.com/simon04.png?size=90"><span class="contributor__name"> simon04</span></a></div></div></div><div class="interactive" id="components/gitter/gitter.jsx" data-props="{}"><span class="gitter"></span></div></section></div><footer class="footer"><div class="container footer__inner"><section class="footer__left"><a href="/guides/getting-started" class="footer__link">Getting Started</a><a href="/organization" class="footer__link">Organization</a><a href="/support" class="footer__link">Support</a><a href="/comparison" class="footer__link">Comparison</a></section><section class="footer__middle"><a href="/" class="footer__icon"><img src="/6bc5d8cf78d442a984e70195db059b69.svg" alt="webpack icon"></a></section><section class="footer__right"><a href="/glossary" class="footer__link">Glossary</a><a href="/branding" class="footer__link">Branding</a><a href="//gitter.im/webpack/webpack" target="_blank" class="footer__link">Gitter</a><a href="https://github.com/webpack/webpack/releases" target="_blank" class="footer__link">Changelog</a><a href="/license" class="footer__link footer__license"><img alt="Creative Commons License" src="/c983c925f14c5a308465ce5f912be111.svg"><img alt="Creative Commons License" src="/c440e4e11ad72daf1899ca0616ddd8b8.svg"></a></section></div></footer><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-46921629-2', 'auto');ga('send', 'pageview');</script></div>
 
     
       <script src="/98df74001bb1530ff70b97a0d2f83d8d.js"></script>
