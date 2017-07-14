@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/3b5cd61c58d89ab9aca9.css" rel="stylesheet">
+      <link href="/00ef114fcd4d5b519fe5.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -483,7 +483,7 @@ Time: 775ms
   };
 </code></pre>
 <p><strong>src/index.js</strong></p>
-<pre><code class="lang-diff"><span class="token deleted">- import _ from &apos;lodash&apos;;</span>
+<pre><code class="lang-diff">  import _ from &apos;lodash&apos;;
 <span class="token deleted">- import &apos;./style.css&apos;;</span>
 <span class="token deleted">- import Icon from &apos;./icon.png&apos;;</span>
 <span class="token deleted">- import Data from &apos;./data.xml&apos;;</span>
@@ -492,7 +492,7 @@ Time: 775ms
     var element = document.createElement(&apos;div&apos;);
 -
 <span class="token deleted">-   // Lodash, now imported by this script</span>
-<span class="token deleted">-   element.innerHTML = _.join([&apos;Hello&apos;, &apos;webpack&apos;], &apos; &apos;);</span>
+    element.innerHTML = _.join([&apos;Hello&apos;, &apos;webpack&apos;], &apos; &apos;);
 <span class="token deleted">-   element.classList.add(&apos;hello&apos;);</span>
 -
 <span class="token deleted">-   // Add the image to our existing div.</span>
@@ -502,7 +502,6 @@ Time: 775ms
 <span class="token deleted">-   element.appendChild(myIcon);</span>
 -
 <span class="token deleted">-   console.log(Data);</span>
-<span class="token inserted">+   element.innerHTML = _.join([&apos;Hello&apos;, &apos;webpack&apos;], &apos; &apos;);</span>
 
     return element;
   }
