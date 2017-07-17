@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
     
-      <link href="/2547e33251bfaf22a3da.css" rel="stylesheet">
+      <link href="/dea7728cd8612da73f6c.css" rel="stylesheet">
     
 
     <script src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
@@ -115,7 +115,7 @@ print.bundle.js  2.74 kB       1  <span class="token punctuation">[</span>emitte
   module.exports = {
     entry: {
       app: &apos;./src/index.js&apos;,
-      vendor: [&apos;lodash&apos;]
+      print: &apos;./src/print.js&apos;
     },
 <span class="token inserted">+   plugins: [</span>
 <span class="token inserted">+     new HtmlWebpackPlugin({</span>
@@ -164,7 +164,7 @@ Child html-webpack-plugin <span class="token keyword">for</span> <span class="to
   module.exports = {
     entry: {
       app: &apos;./src/index.js&apos;,
-      vendor: [&apos;lodash&apos;]
+      print: &apos;./src/print.js&apos;
     },
     plugins: [
 <span class="token inserted">+     new CleanWebpackPlugin([&apos;dist&apos;]),</span>
